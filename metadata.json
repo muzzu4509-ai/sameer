@@ -1,0 +1,6 @@
+{
+  "name": "The Next Cut Unisex Salon",
+  "description": "A premium, elegant, and fully responsive modern website for The Next Cut Unisex Salon, showcasing high-end grooming, styling, and beauty services for men and women.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

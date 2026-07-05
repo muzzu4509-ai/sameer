@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  
+  --color-gold-50: #fefdf3;
+  --color-gold-100: #fbf8e2;
+  --color-gold-200: #f5edb6;
+  --color-gold-300: #ebdf81;
+  --color-gold-400: #decb4f;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #b89126;
+  --color-gold-700: #94701e;
+  --color-gold-800: #7a5a1e;
+  --color-gold-900: #684a1d;
+  --color-gold-950: #3d290d;
+}
+
+@utility glass {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility glass-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility text-gold-gradient {
+  background: linear-gradient(135deg, #f5edb6 0%, #D4AF37 50%, #94701e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility bg-gold-gradient {
+  background: linear-gradient(135deg, #f5edb6 0%, #D4AF37 50%, #94701e 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar matching geometric system */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f5edb6;
+}
+
+/* Selection colors */
+::selection {
+  background-color: #D4AF37;
+  color: #0A0A0A;
+}
+
